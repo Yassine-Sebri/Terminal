@@ -1,0 +1,112 @@
+html {
+	background-color: #120E14 !important;
+}
+
+body {
+    background: #120E14;
+    color: rgb(185, 180, 169);
+    font-family: "Fira Mono", monospace;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+    padding: 0px 20px;
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (max-width: 630px) {
+    body {
+        padding: 0px 40px;
+    }
+}
+
+header {
+    margin: 20px 0px 20px;
+}
+
+header .site-title a {
+    text-decoration: none;
+}
+
+header .devlog-title {
+    font-weight: bold;
+}
+
+header h1 a {
+    color: rgb(185, 180, 169);
+}
+
+#app {
+  color: rgb(0, 170, 0);
+  font-size: 1.1rem;
+}
+
+footer {
+    margin-top: 2rem;
+    padding-bottom: 1.5rem;    
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+a {
+    color: rgb(0, 170, 0);
+    text-decoration: none;
+}
+
+i {
+  font-size: 1.5rem;
+}
+
+.underline:hover {
+    color: rgb(0, 170, 0);
+}
+
+.underline {
+    position: relative;
+}
+
+.underline::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: rgb(0, 170, 0);
+    transform-origin: bottom right;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+
+.underline:hover::before {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+
+
+.cursor {
+    animation: cursor 2s infinite;
+    color: rgb(0, 170, 0);
+    display: inline-block;
+    width: 10px;
+    margin-left: 5px;
+    border-radius: 1px;
+}
+
+
+@keyframes cursor {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 1
+    }
+    to {
+        opacity: 0
+    }
+}
