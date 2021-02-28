@@ -4,7 +4,10 @@ const Writeups = () => {
   return (
     <div id="Writeups">
       2021-02-28 -{" "}
-      <Link to="/Writeups/Microcorruption-New-Orleans" className="highlight">
+      <Link
+        to="/Terminal/Writeups/Microcorruption-New-Orleans"
+        className="highlight"
+      >
         Microcorruption: New Orleans
       </Link>
     </div>
