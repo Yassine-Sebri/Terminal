@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header>
       <nav>
-        <Link to="/" className="underline">
+        <Link to="/Terminal" className="underline">
           /About
         </Link>
         <Link to="/Projects" className="underline">
@@ -13,12 +13,9 @@ const Header = () => {
         <Link to="/Writeups" className="underline">
           /Writeups
         </Link>
-        <Link
-          to="mailto:yassine.sebri@enetcom.u-sfax.tn "
-          className="underline"
-        >
+        <a href="mailto:yassine.sebri@enetcom.u-sfax.tn " className="underline">
           /Contact
-        </Link>
+        </a>
       </nav>
     </header>
   );

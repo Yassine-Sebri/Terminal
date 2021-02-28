@@ -14,7 +14,7 @@ function App() {
           <Header />
           <Title />
           <Route
-            path="/"
+            path="/Terminal"
             exact
             render={(props) => (
               <span id="type">
