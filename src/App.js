@@ -22,11 +22,11 @@ function App() {
               </span>
             )}
           />
+          <Route path="/Terminal/Writeups" exact component={Writeups} />
           <Route
-            path="/Writeups/Microcorruption-New-Orleans"
+            path="/Terminal/Writeups/Microcorruption-New-Orleans"
             component={MCNO}
           />
-          <Route path="/Writeups" exact component={Writeups} />
         </div>
         <Footer />
       </Router>
