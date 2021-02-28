@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import Title from "./components/Title";
+import Writer from "./components/Writer";
+import Footer from "./components/Footer";
+import Writeups from "./components/Writeups";
+import MCNO from "./components/Writeups/MCNO";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <div id="container">
+          <Header />
+          <Title />
+          <Route
+            path="/"
+            exact
+            render={(props) => (
+              <span id="type">
+                <Writer />
+              </span>
+            )}
+          />
+          <Route
+            path="/Writeups/Microcorruption-New-Orleans"
+            component={MCNO}
+          />
+          <Route path="/Writeups" exact component={Writeups} />
+        </div>
+        <Footer />
+      </Router>
     </div>
   );
 }
