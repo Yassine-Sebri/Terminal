@@ -6,7 +6,7 @@ body {
   background: #120e14;
   color: rgb(185, 180, 169);
   font-family: "Fira Mono", monospace;
-  font-size: 18px;
+  font-size: 1.1rem;
   margin: 0 auto;
   max-width: 1000px;
   padding: 0px 20px 0px 40px;
@@ -35,7 +35,7 @@ h1 {
 #code {
   color: rgb(255, 85, 255);
   font-family: "VT323", monospace;
-  font-size: 24px;
+  font-size: 1.43em;
   line-height: 75%;
 }
 
