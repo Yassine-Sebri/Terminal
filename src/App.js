@@ -4,6 +4,7 @@ import Writer from "./components/Writer";
 import Footer from "./components/Footer";
 import Writeups from "./components/Writeups";
 import MCNO from "./components/Writeups/MCNO";
+import MCS from "./components/Writeups/MCS";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
@@ -26,6 +27,10 @@ function App() {
           <Route
             path="/Terminal/Writeups/Microcorruption-New-Orleans"
             component={MCNO}
+          />
+          <Route
+            path="/Terminal/Writeups/Microcorruption-Sydney"
+            component={MCS}
           />
         </div>
         <Footer />
