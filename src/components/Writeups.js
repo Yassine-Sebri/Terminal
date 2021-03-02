@@ -4,19 +4,13 @@ const Writeups = () => {
   return (
     <div id="Writeups">
       2021-03-01 -{" "}
-      <Link
-        to="/Terminal/Writeups/Microcorruption-Sydney"
-        className="highlight"
-      >
+      <Link to="/Writeups/Microcorruption-Sydney" className="highlight">
         Microcorruption: Sydney
       </Link>
       <br />
       <br />
       2021-02-28 -{" "}
-      <Link
-        to="/Terminal/Writeups/Microcorruption-New-Orleans"
-        className="highlight"
-      >
+      <Link to="/Writeups/Microcorruption-New-Orleans" className="highlight">
         Microcorruption: New Orleans
       </Link>
     </div>

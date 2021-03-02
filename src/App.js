@@ -15,7 +15,7 @@ function App() {
           <Header />
           <Title />
           <Route
-            path="/Terminal"
+            path="/"
             exact
             render={(props) => (
               <span id="type">
@@ -23,15 +23,12 @@ function App() {
               </span>
             )}
           />
-          <Route path="/Terminal/Writeups" exact component={Writeups} />
+          <Route path="/Writeups" exact component={Writeups} />
           <Route
-            path="/Terminal/Writeups/Microcorruption-New-Orleans"
+            path="/Writeups/Microcorruption-New-Orleans"
             component={MCNO}
           />
-          <Route
-            path="/Terminal/Writeups/Microcorruption-Sydney"
-            component={MCS}
-          />
+          <Route path="/Writeups/Microcorruption-Sydney" component={MCS} />
         </div>
         <Footer />
       </Router>
