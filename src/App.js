@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Writeups from "./components/Writeups";
 import MCNO from "./components/Writeups/MCNO";
 import MCS from "./components/Writeups/MCS";
+import MCH from "./components/Writeups/MCH";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
             component={MCNO}
           />
           <Route path="/Writeups/Microcorruption-Sydney" component={MCS} />
+          <Route path="/Writeups/Microcorruption-Hanoi" component={MCH} />
         </div>
         <Footer />
       </Router>

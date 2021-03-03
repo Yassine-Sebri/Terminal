@@ -39,6 +39,10 @@ h1 {
   line-height: 75%;
 }
 
+#keyword {
+  color: rgb(255, 85, 255);
+}
+
 #type {
   color: rgb(0, 170, 0);
   line-height: 170%;
